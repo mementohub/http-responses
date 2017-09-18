@@ -2,10 +2,10 @@
 
 namespace iMemento\Http\Responses;
 
-class ConflictResponse extends Response
+class ConflictResponse extends ErrorResponse
 {
-    public function __construct($content = null, $headers = [], array $debug)
+    public function __construct($content = '', $headers = [])
     {
-        parent::__construct($content, 409, $headers, $debug);
+        parent::__construct($content, 409, $headers);
     }
 }

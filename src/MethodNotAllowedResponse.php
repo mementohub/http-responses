@@ -2,10 +2,10 @@
 
 namespace iMemento\Http\Responses;
 
-class MethodNotAllowedResponse extends Response
+class MethodNotAllowedResponse extends ErrorResponse
 {
-    public function __construct($content = null, $headers = [], array $debug)
+    public function __construct($content = '', $headers = [])
     {
-        parent::__construct($content, 405, $headers, $debug);
+        parent::__construct($content, 405, $headers);
     }
 }

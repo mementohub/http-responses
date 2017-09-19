@@ -9,5 +9,6 @@ composer require imemento/http-responses
 
 ## Usage
 ```php
-//todo
+return new MethodNotAllowedResponse($content = '', $headers = []);
 ```
+Each response has a specific http status code assigned to it.

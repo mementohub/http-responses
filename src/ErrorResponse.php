@@ -6,7 +6,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ErrorResponse extends Response
 {
-
     /**
      * Constructor.
      *

@@ -1,6 +1,6 @@
 <?php
 
-namespace iMemento\Http\CollectionResponses;
+namespace iMemento\Http\Responses\CollectionResponses;
 
 use Symfony\Component\HttpFoundation\Response;
 

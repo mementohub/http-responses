@@ -18,6 +18,8 @@ class ItemDeletedResponse extends Response
      */
     public function __construct($content = null, $headers = [])
     {
+        $headers['Content-Type'] = 'application/json';
+
         $content = $content ?? json_encode(['message' => 'Item deleted.']);
         parent::__construct($content,200, $headers);
     }

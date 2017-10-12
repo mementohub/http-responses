@@ -18,6 +18,8 @@ class CollectionResponse extends Response
      */
     public function __construct(array $content, $headers = [])
     {
+        $headers['Content-Type'] = 'application/json';
+        
         $content = json_encode($content);
         parent::__construct($content,200, $headers);
     }

@@ -18,6 +18,8 @@ class ItemCreatedResponse extends Response
      */
     public function __construct($content = null, $headers = [])
     {
+        $headers['Content-Type'] = 'application/json';
+
         $content = $content ?? json_encode(['message' => 'Item created.']);
         parent::__construct($content,201, $headers);
     }

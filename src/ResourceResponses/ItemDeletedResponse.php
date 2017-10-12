@@ -1,6 +1,6 @@
 <?php
 
-namespace iMemento\Http\ResourceResponses;
+namespace iMemento\Http\Responses\ResourceResponses;
 
 use Symfony\Component\HttpFoundation\Response;
 

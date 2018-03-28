@@ -21,6 +21,7 @@ class ItemUpdatedResponse extends Response
         $headers['Content-Type'] = 'application/json';
 
         $content = $content ?? json_encode(['message' => 'Item updated.']);
-        parent::__construct($content,200, $headers);
+        
+        parent::__construct($content, Response::HTTP_OK, $headers);
     }
 }

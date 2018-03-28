@@ -21,6 +21,7 @@ class ItemCreatedResponse extends Response
         $headers['Content-Type'] = 'application/json';
 
         $content = $content ?? json_encode(['message' => 'Item created.']);
-        parent::__construct($content,201, $headers);
+        
+        parent::__construct($content, Response::HTTP_CREATED, $headers);
     }
 }

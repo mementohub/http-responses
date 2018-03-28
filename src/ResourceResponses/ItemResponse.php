@@ -5,13 +5,13 @@ namespace iMemento\Http\Responses\ResourceResponses;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Class ItemDeletedResponse
+ * Class ItemResponse
  * @package iMemento\Http\Responses\ResourceResponses
  */
-class ItemDeletedResponse extends Response
+class ItemResponse extends Response
 {
     /**
-     * Use this when responding to a resource delete endpoint.
+     * Use this when responding to a resource show endpoint.
      *
      * @param null $content
      * @param array $headers
@@ -20,8 +20,6 @@ class ItemDeletedResponse extends Response
     {
         $headers['Content-Type'] = 'application/json';
 
-        $content = $content ?? json_encode(['message' => 'Item deleted.']);
-        
         parent::__construct($content, Response::HTTP_OK, $headers);
     }
 }

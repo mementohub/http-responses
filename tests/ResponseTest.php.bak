@@ -1,0 +1,23 @@
+<?php
+
+namespace iMemento\Http\Responses;
+
+use PHPUnit\Framework\TestCase;
+
+/**
+ * @covers Client
+ */
+class ResponseTest extends TestCase
+{
+
+    public function test_response_content()
+    {
+
+    }
+
+    public function test_response_headers()
+    {
+
+    }
+    
+}
